@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="@dimen/_8sdp"
+    android:background="@drawable/shape_rectangle_stroke"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.elyeproj.loaderviewlibrary.LoaderTextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/loaderTextView"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_height="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_below="@+id/loaderTextView"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loaderTextView">
+
+        <include
+            style="@style/loading_menu_style"
+            layout="@layout/item_view" />
+
+        <include
+            style="@style/loading_menu_style"
+            layout="@layout/item_view" />
+
+        <include
+            style="@style/loading_menu_style"
+            layout="@layout/item_view" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

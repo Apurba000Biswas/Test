@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_330sdp">
+
+    <com.elyeproj.loaderviewlibrary.LoaderImageView
+        android:id="@+id/loaderImageView"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_330sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_alignParentTop="true"
+        app:custom_color="@color/loading_color"
+        app:layout_constraintEnd_toStartOf="@+id/loaderImageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.elyeproj.loaderviewlibrary.LoaderImageView
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/loaderImageView2"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:corners="16"
+        app:custom_color="@color/loading_color" />
+
+    <com.elyeproj.loaderviewlibrary.LoaderImageView
+        android:id="@+id/loaderImageView3"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:corners="16"
+        app:custom_color="@color/loading_color" />
+
+    <com.elyeproj.loaderviewlibrary.LoaderImageView
+        android:id="@+id/loaderImageView4"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:corners="16"
+        app:custom_color="@color/loading_color" />
+
+
+</RelativeLayout>
