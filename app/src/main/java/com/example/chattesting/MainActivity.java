@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.chattesting.data.Repository;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,5 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         //View loadingView = findViewById(R.id.loading_view);
         //loadingView.setVisibility(View.VISIBLE);
+
+        Repository.getInstance().makeHomeDataRequest();
     }
 }
